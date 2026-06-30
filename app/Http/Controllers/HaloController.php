@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class HaloController extends Controller
 {
     public function index() {
-        return "Halo dari Controller!";
+        return view('halo');
     }
 }
