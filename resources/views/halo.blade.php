@@ -7,6 +7,12 @@
     <title>Halaman Halo</title>
 </head>
 <body>
-    <h1>Halo dari blade!</h1>
+    <h1>Halo, {{ $nama }}</h1>
+
+    <ul>
+        @foreach ($produk as $item) 
+            <li>{{ $item['nama'] }} - Rp{{ $item['harga'] }}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

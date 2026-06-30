@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get("/halo", [HaloController::class, 'index']);
+Route::get("/profile", [HaloController::class, 'profile']);
